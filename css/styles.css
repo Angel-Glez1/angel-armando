@@ -1,13 +1,15 @@
 :root {
-	--first-color: #5bd3f2;
-	--first-color-alpha: rgba(91, 211, 242, .8);
-	--secound-color: #f6c105;
-	--secound-color-alpha: rgba(246, 193, 5, .8);
+	--first-color: #ca05c3;
+	--first-color-alpha: rgba(231, 6, 220, 0.87);
+
+	
+
 	--white-color: #fff;
 	--black-color: #000;
 	--white-alpha-color: rgba(255, 255, 255, .5);
 	--black-alpha-color: rgba(0, 0, 0, .5);
-	--link-color: #5bd3f2;
+
+	--link-color: #ca05c3;
 	--font: 'Poppins', sans-serif;
 	--max-width: 1200px;
 	--header-height: 5rem;
@@ -107,7 +109,7 @@ p {
 	text-align: center;
 	border: none;
 	border-radius: .5rem;
-	background-color: #300661e0;
+	background-color: var(--first-color);
 	color: white;
 	font-size: 2rem;
 }
@@ -189,10 +191,6 @@ p {
 /**____________  Card Services ______________**/
 
 .card {
-	background: #c7b9b9;
-	background: var(--black-color);
-	background: var(--white-color);
-	border-radius: .5rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -213,27 +211,12 @@ p {
 	font-size: 3rem;
 }
 
-
-@media screen and (min-width: 768px) {
-	.card {
-		box-shadow: 0rem 0rem 1rem var(--black-alpha-color);
-	}
-
+.card-icon {
+	fill: var(--first-color-alpha)
 }
 
 
-@media screen and (min-width: 1024px) {
-	.card:hover svg {
-		fill: white;
-	}
 
-	.card:hover {
-		background: rgba(48, 6, 97, 0.966);
-		color: white;
-		box-shadow: none;
-
-	}
-}
 
 
 /**_________________  Menu ________________**/
@@ -304,6 +287,8 @@ p {
 		background-color: var(--first-color);
 		flex-direction: row;
 		background-color: transparent;
+		opacity: 1;
+		pointer-events: auto;
 	}
 
 
@@ -353,19 +338,21 @@ p {
 
 .hero-image-title {
 	font-size: 7rem;
-	color: var(--first-color-alpha);
-	color: var(--white-color);
+	color: white;
+	text-shadow: 0px 0px 5px white;
+	
 }
 
 
 .hero-image-text {
 	font-size: 4rem;
-	color: var(--white-alpha-color);
+	color: var(--white-color);
 }
 
 
-.hero-image-text i {
-	color: var(--first-color);
+.hero-image-text span {
+	font-weight: bold;
+	color: rgba(231, 6, 220, 0.87);
 }
 
 /*---------------------------------------------------------
@@ -488,7 +475,7 @@ p {
 
 
 .logo a span {
-	color: var(--first-color-alpha);
+	color: #ca05c2;
 }
 
 
