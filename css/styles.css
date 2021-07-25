@@ -33,9 +33,12 @@ html {
 
 body {
 	margin: 0;
-	overflow-x: hidden;
+	overflow-x: hidden !important;
 	font-size: 16px;
 }
+
+
+
 
 a {
 	transition: all 0.5s ease-out;
