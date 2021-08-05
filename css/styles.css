@@ -561,6 +561,40 @@ p {
 	pointer-events: auto;
 }
 
+
+.contact-content {
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+	
+	
+}
+
+.contact-content p {
+	font-size: 2rem;
+}
+
+
+.contact-social{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	padding: 1rem;
+}
+
+.linkedin ,
+.instragram,
+.github{
+	margin-left: 1rem;
+}
+.linkedin svg,
+.instragram svg,
+.github svg {
+	width: 4rem;
+}
+
+
 @media screen and (min-width: 698px) {
 	.portfolio>.container {
 		display: grid;
@@ -583,6 +617,18 @@ p {
 		margin-left: 1rem;
 		align-self: center;
 	}
+
+	.contact > .container {
+		display: grid;
+		grid-template-columns: repeat(2, 45%);
+		justify-content: space-between;
+		align-content: center;
+	}
+
+	.contact .section-title {
+		grid-column: 2 span;
+	}
+
 }
 
 
@@ -619,4 +665,17 @@ p {
 		align-content: center;
 	}
 
+}
+
+
+footer {
+	background-color: var(--black-color);
+	padding: 1rem;
+	text-align: center;
+}
+
+footer p {
+	margin: 0;
+	padding: 0;
+	color: white;
 }
